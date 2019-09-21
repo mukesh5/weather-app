@@ -9,7 +9,7 @@ class Weather extends React.Component {
 
 
 			<div>
-				{this.props.weatherData && <HourlyWeather weather={this.props.weatherData} />}
+				{this.props.weatherData && <HourlyWeather weatherHourly={this.props.weatherData} />}
 				{this.props.error && <h2>Please Enter a value</h2>}
 			</div>
 		);
