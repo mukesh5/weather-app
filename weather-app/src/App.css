@@ -4,6 +4,7 @@
 
 body {
   font-family: "Open Sans", serif;
+  background-image: url('img/bg.jpg');
 }
 
 input[type="text"] {
@@ -12,11 +13,13 @@ input[type="text"] {
   border-bottom: solid 1px #f16051;
   width: 30%;
   padding-bottom: 4px;
+  padding-left: 30px;
   color: black !important;
   font-weight: lighter;
   letter-spacing: 2px;
   margin-bottom: 30px;
   margin-right: 20px;
+  margin-left: 20px;
   font-size: 20px;
 }
 

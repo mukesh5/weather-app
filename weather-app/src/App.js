@@ -45,13 +45,20 @@ class App extends React.Component {
   render() {
     return (
       <div>
-              
-                <Titles/>
+              <div className='container'>
+                <div className='jumbotron'>
+                  <Titles/>
+                </div>
+              </div>
+               
+              <div className='form-group text-center'>
                  <Form  getWeather={this.getWeather}/>
                  
                  {this.state.responseData && <DisplayTabs responseData={this.state.responseData}/>}
-           
+              
                  {this.state.error && <h3 className='text-warning'>Please Enter a city</h3>}
+
+              </div>
               
     
       </div>
