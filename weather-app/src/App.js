@@ -45,13 +45,21 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Titles/>
-        <Form  getWeather={this.getWeather}/>
-        {this.state.responseData && <DisplayTabs responseData={this.state.responseData}/>}
-        {this.state.error && <h3>Please Enter a city</h3>}
-      </div> 
+              
+                <Titles/>
+                 <Form  getWeather={this.getWeather}/>
+                 
+                 {this.state.responseData && <DisplayTabs responseData={this.state.responseData}/>}
+           
+                 {this.state.error && <h3 className='text-warning'>Please Enter a city</h3>}
+              
+    
+      </div>
       );
   }
 }
 
 export default App;
+
+        
+        

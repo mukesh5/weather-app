@@ -29,6 +29,7 @@ class DisplayTabs extends React.Component {
 
 		
 		return(
+		<div className='nav nav-tabs' id='nav-tab' role='tab'>	
 			<Tabs>
           <TabList>
             <Tab>Today</Tab>
@@ -44,6 +45,8 @@ class DisplayTabs extends React.Component {
           </TabPanel>
 
         </Tabs> 
+        </div>
+       
 		);
 	}
 }
